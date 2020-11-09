@@ -12,6 +12,12 @@
 		081EBBCA254F4B71009BB667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081EBBC9254F4B71009BB667 /* Assets.xcassets */; };
 		081EBBCD254F4B71009BB667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081EBBCC254F4B71009BB667 /* Preview Assets.xcassets */; };
 		081EBBD0254F4B71009BB667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081EBBCE254F4B71009BB667 /* Main.storyboard */; };
+		081EBBDA254F4C8F009BB667 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBD9254F4C8F009BB667 /* AlertView.swift */; };
+		081EBBDD254F4CAB009BB667 /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBDC254F4CAB009BB667 /* StampView.swift */; };
+		081EBBE1254F5042009BB667 /* APIMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE0254F5042009BB667 /* APIMachine.swift */; };
+		081EBBE4254F5064009BB667 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
+		084780BA2559C6EE00A06C67 /* AlertMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780B92559C6EE00A06C67 /* AlertMachine.swift */; };
+		084780BD2559D7B000A06C67 /* AlertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780BC2559D7B000A06C67 /* AlertDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		081EBBCF254F4B71009BB667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		081EBBD1254F4B71009BB667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081EBBD2254F4B71009BB667 /* fishcamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fishcamp.entitlements; sourceTree = "<group>"; };
+		081EBBD9254F4C8F009BB667 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		081EBBDC254F4CAB009BB667 /* StampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
+		081EBBE0254F5042009BB667 /* APIMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMachine.swift; sourceTree = "<group>"; };
+		081EBBE3254F5064009BB667 /* APIMachineSecret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMachineSecret.swift; sourceTree = "<group>"; };
+		084780B92559C6EE00A06C67 /* AlertMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMachine.swift; sourceTree = "<group>"; };
+		084780BC2559D7B000A06C67 /* AlertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 			children = (
 				081EBBC5254F4B6E009BB667 /* AppDelegate.swift */,
 				081EBBC7254F4B6E009BB667 /* ContentView.swift */,
+				081EBBD9254F4C8F009BB667 /* AlertView.swift */,
+				084780B92559C6EE00A06C67 /* AlertMachine.swift */,
+				084780BC2559D7B000A06C67 /* AlertDetailView.swift */,
+				081EBBDC254F4CAB009BB667 /* StampView.swift */,
+				081EBBE0254F5042009BB667 /* APIMachine.swift */,
+				081EBBE3254F5064009BB667 /* APIMachineSecret.swift */,
 				081EBBC9254F4B71009BB667 /* Assets.xcassets */,
 				081EBBCE254F4B71009BB667 /* Main.storyboard */,
 				081EBBD1254F4B71009BB667 /* Info.plist */,
@@ -144,8 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081EBBE1254F5042009BB667 /* APIMachine.swift in Sources */,
 				081EBBC8254F4B6E009BB667 /* ContentView.swift in Sources */,
+				084780BA2559C6EE00A06C67 /* AlertMachine.swift in Sources */,
 				081EBBC6254F4B6E009BB667 /* AppDelegate.swift in Sources */,
+				081EBBDD254F4CAB009BB667 /* StampView.swift in Sources */,
+				081EBBE4254F5064009BB667 /* APIMachineSecret.swift in Sources */,
+				084780BD2559D7B000A06C67 /* AlertDetailView.swift in Sources */,
+				081EBBDA254F4C8F009BB667 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
