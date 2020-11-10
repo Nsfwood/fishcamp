@@ -24,7 +24,7 @@ struct AlertView: View {
             if fetch.alerts.isEmpty {
                 Spacer()
                 Text("Enter park code to see alerts.")
-                Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://www.nps.gov/findapark/index.htm")!) }
+                Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/National-Park-Codes#national-park-service-park-codes")!) }
                 Spacer()
             }
             else {

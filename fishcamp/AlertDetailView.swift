@@ -15,18 +15,20 @@ struct AlertDetailView: View {
     
     var body: some View {
         VStack {
-            Text(alertToShow.parkCode ?? "").bold()
+            Text(alertToShow.parkCode?.uppercased() ?? "").bold()
             Text(alertToShow.category ?? "").bold().multilineTextAlignment(.center)
             Text(alertToShow.title ?? "").bold().multilineTextAlignment(.center)
             Text(alertToShow.id ?? "").multilineTextAlignment(.center)
             ScrollView {
                 Text(alertToShow.description ?? "")
             }
-            if let u = URL(string: alertToShow.url!) {
-                Button("Open") { NSWorkspace.shared.open(u) }
+            HStack {
+                if let u = URL(string: alertToShow.url!) {
+                    Button("Open") { NSWorkspace.shared.open(u) }
+                }
+                Spacer()
+                Button("Close") { self.presentation.wrappedValue.dismiss() }
             }
-            Spacer()
-            Button("Close") { self.presentation.wrappedValue.dismiss() }
         }.padding()
     }
 }
