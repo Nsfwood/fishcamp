@@ -10,11 +10,12 @@ import MapKit
 
 struct StampView: View {
     
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 44.967243, longitude: -103.771556), span: MKCoordinateSpan(latitudeDelta: 75, longitudeDelta: 75))
+    
+    
     
     var body: some View {
-        Text("Coming soon...")
-        //Map(coordinateRegion: $region)
+        Map(coordinateRegion: $region)
     }
 }
 

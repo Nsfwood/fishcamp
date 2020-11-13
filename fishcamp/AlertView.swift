@@ -22,6 +22,12 @@ struct AlertView: View {
                 Button("Get") { self.fetch.getAlerts(forPark: self.parkCode) }
             }
             if fetch.alerts.isEmpty {
+                Text("Most Popular Parks").bold().foregroundColor(Color.gray)
+                Text("Great Smoky Mountains National Park - GRSM").foregroundColor(Color.gray)
+                Text("Grand Canyon National Park - GRCA").foregroundColor(Color.gray)
+                Text("Rocky Mountain National Park - ROMO").foregroundColor(Color.gray)
+                Text("Zion National Park - ZION").foregroundColor(Color.gray)
+                Text("Yosemite National Park - YOSE").foregroundColor(Color.gray)
                 Spacer()
                 Text("Enter park code to see alerts.")
                 Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/National-Park-Codes#national-park-service-park-codes")!) }
@@ -43,7 +49,7 @@ struct AlertView: View {
                     //Text(alert.description ?? "").multilineTextAlignment(.leading)
                 }
             }
-        }.sheet(item: self.$selectedAlert) { alert in
+        }.padding().sheet(item: self.$selectedAlert) { alert in
             AlertDetailView(alertToShow: alert).frame(width: 400, height: 400, alignment: .topLeading)
         }
     }

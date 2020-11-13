@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             AlertView().tabItem { Text("Alerts") }
             StampView().tabItem { Text("Passport") }
-        }
+        }.padding()
     }
 }
 

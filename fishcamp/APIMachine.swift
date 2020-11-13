@@ -38,3 +38,20 @@ struct AlertData: Codable, Identifiable {
     let description: String?
     let category: String?
 }
+
+struct PassportLocationResponse: Codable {
+    let total: String?
+    let data: [PassportLocationData]?
+}
+
+struct PassportLocationData: Codable {
+    let label: String?
+    let id: String?
+    let type: String?
+    //let parks: [Park]?
+}
+
+//struct Park: Codable {
+//    let states: String?
+//
+//}
