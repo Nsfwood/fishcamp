@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private enum Tabs: Hashable {
+        case alerts
+        case stamps
+    }
+    
     var body: some View {
         TabView {
-            AlertView().tabItem { Text("Alerts") }
-            StampView().tabItem { Text("Passport") }
+            AlertView().tabItem { Label("Alerts", systemImage: "gear") } // Text("Alerts")
+            StampView().tabItem { Label("Passport", systemImage: "star") } // Text("Passport")
         }.padding()
     }
 }

@@ -18,7 +18,7 @@ struct AlertView: View {
         VStack {
             HStack {
                 //TextField("Enter Park Code", text: $parkCode)
-                TextField("Park Code", text: $parkCode)
+                TextField("Park Code", text: $parkCode).disableAutocorrection(true)
                 Button("Get") { self.fetch.getAlerts(forPark: self.parkCode) }
             }
             if fetch.alerts.isEmpty {
@@ -30,7 +30,7 @@ struct AlertView: View {
                 Text("Yosemite National Park - YOSE").foregroundColor(Color.gray)
                 Spacer()
                 Text("Enter park code to see alerts.")
-                Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/National-Park-Codes#national-park-service-park-codes")!) }
+                Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/Park-Codes#national-park-service-park-codes")!) }
                 Spacer()
             }
             else {
@@ -49,7 +49,32 @@ struct AlertView: View {
                     //Text(alert.description ?? "").multilineTextAlignment(.leading)
                 }
             }
-        }.padding().sheet(item: self.$selectedAlert) { alert in
+        }
+        .padding()
+        .focusable()
+        .touchBar {
+            Button("Great Smoky Mountains") {
+                self.parkCode = "grsm"
+                self.fetch.getAlerts(forPark: "grsm")
+            }
+            Button("Grand Canyon") {
+                self.parkCode = "grca"
+                self.fetch.getAlerts(forPark: "grca")
+            }
+            Button("Rocky Mountain") {
+                self.parkCode = "romo"
+                self.fetch.getAlerts(forPark: "romo")
+            }
+            Button("Zion") {
+                self.parkCode = "zion"
+                self.fetch.getAlerts(forPark: "zion")
+            }
+            Button("Yosemite") {
+                self.parkCode = "yose"
+                self.fetch.getAlerts(forPark: "yose")
+            }
+        }
+        .sheet(item: self.$selectedAlert) { alert in
             AlertDetailView(alertToShow: alert).frame(width: 400, height: 400, alignment: .topLeading)
         }
     }
