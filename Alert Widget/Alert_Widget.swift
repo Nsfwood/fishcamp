@@ -12,16 +12,16 @@ import Intents
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
 //        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
-        SimpleEntry(date: Date(), title: "Tioga Road (Hwy 120 through the park) and Glacier Point Road are temporarily closed", description: "Tioga Road (continuation of Highway 120 through the park) and Glacier Point Road are temporarily closed due to snow and ice. Based on current conditions and chance of snow over the next several days, they will remain closed at least through this weekend.", configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), title: "Tioga Road (Hwy 120 through the park) and Glacier Point Road are temporarily closed", description: "Tioga Road (continuation of Highway 120 through the park) and Glacier Point Road are temporarily closed due to snow and ice. Based on current conditions and chance of snow over the next several days, they will remain closed at least through this weekend.", configuration: SelectParkIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(for configuration: SelectParkIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
 //        let entry = SimpleEntry(date: Date(), configuration: configuration)
         let entry = SimpleEntry(date: Date(), title: "Tioga Road (Hwy 120 through the park) and Glacier Point Road are temporarily closed", description: "Tioga Road (continuation of Highway 120 through the park) and Glacier Point Road are temporarily closed due to snow and ice. Based on current conditions and chance of snow over the next several days, they will remain closed at least through this weekend.", configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: SelectParkIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
         // TODO: API call goes here
         // TODO: URLSession to API Machine
@@ -36,7 +36,7 @@ struct Provider: IntentTimelineProvider {
                     
                     let decodedData = try JSONDecoder().decode(Alert.self, from: d)
                     let nextUpdate = Date().addingTimeInterval(360)
-                    let entry = EventEntry(events)
+//                    let entry = EventEntry(events)
                     
                 } else {
                     print("No data")
@@ -67,7 +67,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
     let title: String
     let description: String
-    let configuration: ConfigurationIntent
+    let configuration: SelectParkIntent
 }
 
 struct Alert_WidgetEntryView : View {
@@ -79,7 +79,7 @@ struct Alert_WidgetEntryView : View {
             VStack(alignment: .leading) {
                 Image(systemName: "octagon.fill").foregroundColor(.white).font(.title)
                 Spacer()
-                Text(entry.title).bold().foregroundColor(.white)
+                Text(verbatim: entry.title).bold().foregroundColor(.white)
                 Text(entry.description).foregroundColor(.white)
                 Text(entry.date, style: .time).foregroundColor(.white).opacity(0.5)
             }
@@ -93,7 +93,7 @@ struct Alert_Widget: Widget {
     let kind: String = "Alert_Widget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: SelectParkIntent.self, provider: Provider()) { entry in
             Alert_WidgetEntryView(entry: entry)
         }
         .configurationDisplayName("NPS Park Alerts")
@@ -103,7 +103,7 @@ struct Alert_Widget: Widget {
 
 struct Alert_Widget_Previews: PreviewProvider {
     static var previews: some View {
-        Alert_WidgetEntryView(entry: SimpleEntry(date: Date(), title: "Tioga Road (Hwy 120 through the park) and Glacier Point Road are temporarily closed", description: "Tioga Road (continuation of Highway 120 through the park) and Glacier Point Road are temporarily closed due to snow and ice. Based on current conditions and chance of snow over the next several days, they will remain closed at least through this weekend.", configuration: ConfigurationIntent()))
+        Alert_WidgetEntryView(entry: SimpleEntry(date: Date(), title: "Tioga Road (Hwy 120 through the park) and Glacier Point Road are temporarily closed", description: "Tioga Road (continuation of Highway 120 through the park) and Glacier Point Road are temporarily closed due to snow and ice. Based on current conditions and chance of snow over the next several days, they will remain closed at least through this weekend.", configuration: SelectParkIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
