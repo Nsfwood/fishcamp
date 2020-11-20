@@ -43,7 +43,9 @@
 					<key>INIntentParameterMetadata</key>
 					<dict>
 						<key>INIntentParameterMetadataCapitalization</key>
-						<string>Sentences</string>
+						<string>AllCharacters</string>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<string>YOSE</string>
 						<key>INIntentParameterMetadataDefaultValueID</key>
 						<string>BANjVA</string>
 					</dict>
@@ -85,6 +87,8 @@
 						<string>failure</string>
 					</dict>
 				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>1</integer>
 			</dict>
 			<key>INIntentTitle</key>
 			<string>Select Park</string>

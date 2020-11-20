@@ -7,11 +7,11 @@
 
 import Foundation
 import Cocoa
+import SwiftUI
 
 class PreferencesView: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidAppear() {

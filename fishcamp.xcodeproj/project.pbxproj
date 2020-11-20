@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080BE8A2256763990072226D /* WidgetMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080BE8A1256763990072226D /* WidgetMachine.swift */; };
 		081EBBC6254F4B6E009BB667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBC5254F4B6E009BB667 /* AppDelegate.swift */; };
 		081EBBC8254F4B6E009BB667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBC7254F4B6E009BB667 /* ContentView.swift */; };
 		081EBBCA254F4B71009BB667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081EBBC9254F4B71009BB667 /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		088E59E9255E3C1300B4D0B0 /* Alert_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E59E8255E3C1300B4D0B0 /* Alert_Widget.swift */; };
 		088E59EC255E3C1600B4D0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088E59EB255E3C1600B4D0B0 /* Assets.xcassets */; };
 		088E59EF255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */; };
-		088E59F0255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */; };
 		088E59F3255E3C1600B4D0B0 /* Alert WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 088E59E1255E3C1300B4D0B0 /* Alert WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		088E59FA255E3C4E00B4D0B0 /* APIMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE0254F5042009BB667 /* APIMachine.swift */; };
 		088E59FD255E3C5100B4D0B0 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		080BE8A1256763990072226D /* WidgetMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetMachine.swift; sourceTree = "<group>"; };
 		081EBBC2254F4B6E009BB667 /* Fish Camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fish Camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		081EBBC5254F4B6E009BB667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		081EBBC7254F4B6E009BB667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				088E59E8255E3C1300B4D0B0 /* Alert_Widget.swift */,
+				080BE8A1256763990072226D /* WidgetMachine.swift */,
 				088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */,
 				088E59EB255E3C1600B4D0B0 /* Assets.xcassets */,
 				088E59ED255E3C1600B4D0B0 /* Info.plist */,
@@ -273,7 +275,6 @@
 				081EBBE1254F5042009BB667 /* APIMachine.swift in Sources */,
 				081EBBC8254F4B6E009BB667 /* ContentView.swift in Sources */,
 				084780BA2559C6EE00A06C67 /* AlertMachine.swift in Sources */,
-				088E59F0255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */,
 				081EBBC6254F4B6E009BB667 /* AppDelegate.swift in Sources */,
 				0885AC97255AF4AF00AB401D /* PreferencesVC.swift in Sources */,
 				081EBBDD254F4CAB009BB667 /* StampView.swift in Sources */,
@@ -290,6 +291,7 @@
 				088E59E9255E3C1300B4D0B0 /* Alert_Widget.swift in Sources */,
 				088E59FA255E3C4E00B4D0B0 /* APIMachine.swift in Sources */,
 				088E59FD255E3C5100B4D0B0 /* APIMachineSecret.swift in Sources */,
+				080BE8A2256763990072226D /* WidgetMachine.swift in Sources */,
 				088E59EF255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +442,7 @@
 				CODE_SIGN_ENTITLEMENTS = fishcamp/fishcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2051;
 				DEVELOPMENT_ASSET_PATHS = "\"fishcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -450,6 +453,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcamp;
 				PRODUCT_NAME = "Fish Camp";
 				SWIFT_VERSION = 5.0;
@@ -465,6 +469,7 @@
 				CODE_SIGN_ENTITLEMENTS = fishcamp/fishcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2051;
 				DEVELOPMENT_ASSET_PATHS = "\"fishcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -475,6 +480,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcamp;
 				PRODUCT_NAME = "Fish Camp";
 				SWIFT_VERSION = 5.0;
@@ -488,6 +494,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Alert Widget/Alert_Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2051;
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Alert Widget/Info.plist";
@@ -497,6 +504,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderrohrig.fishcamp.Alert-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -511,6 +519,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Alert Widget/Alert_Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2051;
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Alert Widget/Info.plist";
@@ -520,6 +529,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderrohrig.fishcamp.Alert-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
