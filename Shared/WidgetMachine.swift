@@ -32,6 +32,7 @@ func fetchAlertsForWidget(park: String, completion: @escaping (Result<Alert, Err
         do {
             if let d = data {
                 let decodedData = try JSONDecoder().decode(Alert.self, from: d)
+                print(decodedData.data?.last?.category)
                 completion(.success(decodedData))
             } else {
                 let e = NSError(domain: "Decode Failed", code: 500, userInfo: nil)

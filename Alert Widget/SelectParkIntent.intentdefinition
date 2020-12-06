@@ -19,10 +19,10 @@
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Park Alerts</string>
 			<key>INIntentDescriptionID</key>
 			<string>tVvJ9c</string>
-			<key>INIntentEligibleForWidgets</key>
-			<true/>
 			<key>INIntentIneligibleForSuggestions</key>
 			<true/>
 			<key>INIntentLastParameterTag</key>
@@ -35,7 +35,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Park</string>
+					<string>Park Code</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>RueBwZ</string>
 					<key>INIntentParameterDisplayPriority</key>
@@ -48,6 +48,12 @@
 						<string>YOSE</string>
 						<key>INIntentParameterMetadataDefaultValueID</key>
 						<string>BANjVA</string>
+						<key>INIntentParameterMetadataDisableAutocorrect</key>
+						<true/>
+						<key>INIntentParameterMetadataDisableSmartDashes</key>
+						<true/>
+						<key>INIntentParameterMetadataDisableSmartQuotes</key>
+						<true/>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>park</string>
@@ -62,6 +68,10 @@
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Park</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>Qq63In</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Primary</string>
 						</dict>
