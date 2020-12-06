@@ -20,7 +20,7 @@
 			<key>INIntentCategory</key>
 			<string>information</string>
 			<key>INIntentDescription</key>
-			<string>Park alerts</string>
+			<string>Park Alerts</string>
 			<key>INIntentDescriptionID</key>
 			<string>tVvJ9c</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -30,7 +30,7 @@
 			<key>INIntentLastParameterTag</key>
 			<integer>1</integer>
 			<key>INIntentName</key>
-			<string>Configuration</string>
+			<string>SelectPark</string>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>

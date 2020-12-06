@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AlertDetailView: View {
     
+    @Environment(\.openURL) var openURL
     @Environment(\.presentationMode) var presentation
     
     var alertToShow: AlertData
@@ -24,7 +25,7 @@ struct AlertDetailView: View {
             }
             HStack {
                 if let u = URL(string: alertToShow.url!) {
-                    Button("Open") { NSWorkspace.shared.open(u) }
+                    Button("Open") { openURL(u) }
                 }
                 Spacer()
                 Button("Close") { self.presentation.wrappedValue.dismiss() }

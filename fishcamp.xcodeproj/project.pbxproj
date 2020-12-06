@@ -19,15 +19,35 @@
 		081EBBE4254F5064009BB667 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
 		084780BA2559C6EE00A06C67 /* AlertMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780B92559C6EE00A06C67 /* AlertMachine.swift */; };
 		084780BD2559D7B000A06C67 /* AlertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780BC2559D7B000A06C67 /* AlertDetailView.swift */; };
+		08756F0A2579A29200EDE3B2 /* SelectParkIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 088E59EA255E3C1300B4D0B0 /* SelectParkIntent.intentdefinition */; };
 		0885AC97255AF4AF00AB401D /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885AC96255AF4AF00AB401D /* PreferencesVC.swift */; };
 		088E59E4255E3C1300B4D0B0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E59E3255E3C1300B4D0B0 /* WidgetKit.framework */; };
 		088E59E6255E3C1300B4D0B0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E59E5255E3C1300B4D0B0 /* SwiftUI.framework */; };
 		088E59E9255E3C1300B4D0B0 /* Alert_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088E59E8255E3C1300B4D0B0 /* Alert_Widget.swift */; };
 		088E59EC255E3C1600B4D0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088E59EB255E3C1600B4D0B0 /* Assets.xcassets */; };
-		088E59EF255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */; };
+		088E59EF255E3C1600B4D0B0 /* SelectParkIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 088E59EA255E3C1300B4D0B0 /* SelectParkIntent.intentdefinition */; };
 		088E59F3255E3C1600B4D0B0 /* Alert WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 088E59E1255E3C1300B4D0B0 /* Alert WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		088E59FA255E3C4E00B4D0B0 /* APIMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE0254F5042009BB667 /* APIMachine.swift */; };
 		088E59FD255E3C5100B4D0B0 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
+		08A5895F257881C000767560 /* fishcampforiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5895E257881C000767560 /* fishcampforiosApp.swift */; };
+		08A58961257881C000767560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A58960257881C000767560 /* ContentView.swift */; };
+		08A58963257881C200767560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A58962257881C200767560 /* Assets.xcassets */; };
+		08A58966257881C300767560 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A58965257881C200767560 /* Preview Assets.xcassets */; };
+		08A5896E257881F800767560 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBD9254F4C8F009BB667 /* AlertView.swift */; };
+		08A589722578822000767560 /* AlertMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780B92559C6EE00A06C67 /* AlertMachine.swift */; };
+		08A589762578822500767560 /* APIMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE0254F5042009BB667 /* APIMachine.swift */; };
+		08A5897A2578822800767560 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
+		08A5897E2578832C00767560 /* AlertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084780BC2559D7B000A06C67 /* AlertDetailView.swift */; };
+		08A58987257883E800767560 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E59E3255E3C1300B4D0B0 /* WidgetKit.framework */; };
+		08A58988257883E800767560 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E59E5255E3C1300B4D0B0 /* SwiftUI.framework */; };
+		08A5898B257883E800767560 /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5898A257883E800767560 /* widget.swift */; };
+		08A5898E257883ED00767560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A5898D257883ED00767560 /* Assets.xcassets */; };
+		08A58990257883ED00767560 /* SelectParkIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 08A5898C257883E800767560 /* SelectParkIntent.intentdefinition */; };
+		08A58991257883ED00767560 /* SelectParkIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 08A5898C257883E800767560 /* SelectParkIntent.intentdefinition */; };
+		08A58994257883ED00767560 /* widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08A58986257883E800767560 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08A589AB2578846700767560 /* WidgetMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080BE8A1256763990072226D /* WidgetMachine.swift */; };
+		08A589B02578849800767560 /* APIMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE0254F5042009BB667 /* APIMachine.swift */; };
+		08A589B5257884A100767560 /* APIMachineSecret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EBBE3254F5064009BB667 /* APIMachineSecret.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +57,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 088E59E0255E3C1300B4D0B0;
 			remoteInfo = "Alert WidgetExtension";
+		};
+		08A58992257883ED00767560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081EBBBA254F4B6E009BB667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A58985257883E800767560;
+			remoteInfo = widgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +75,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				088E59F3255E3C1600B4D0B0 /* Alert WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A58998257883ED00767560 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08A58994257883ED00767560 /* widgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,10 +113,21 @@
 		088E59E3255E3C1300B4D0B0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		088E59E5255E3C1300B4D0B0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		088E59E8255E3C1300B4D0B0 /* Alert_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_Widget.swift; sourceTree = "<group>"; };
-		088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Alert_Widget.intentdefinition; sourceTree = "<group>"; };
+		088E59EA255E3C1300B4D0B0 /* SelectParkIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SelectParkIntent.intentdefinition; sourceTree = "<group>"; };
 		088E59EB255E3C1600B4D0B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		088E59ED255E3C1600B4D0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088E59EE255E3C1600B4D0B0 /* Alert_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alert_Widget.entitlements; sourceTree = "<group>"; };
+		08A5895C257881C000767560 /* fishcampforios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fishcampforios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5895E257881C000767560 /* fishcampforiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fishcampforiosApp.swift; sourceTree = "<group>"; };
+		08A58960257881C000767560 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08A58962257881C200767560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A58965257881C200767560 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08A58967257881C300767560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A58986257883E800767560 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5898A257883E800767560 /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
+		08A5898C257883E800767560 /* SelectParkIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SelectParkIntent.intentdefinition; sourceTree = "<group>"; };
+		08A5898D257883ED00767560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A5898F257883ED00767560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +147,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08A58959257881C000767560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A58983257883E800767560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A58988257883E800767560 /* SwiftUI.framework in Frameworks */,
+				08A58987257883E800767560 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +171,9 @@
 			children = (
 				081EBBC4254F4B6E009BB667 /* fishcamp */,
 				088E59E7255E3C1300B4D0B0 /* Alert Widget */,
+				08898291257D7F62003D0CFF /* Shared */,
+				08A5895D257881C000767560 /* fishcampforios */,
+				08A58989257883E800767560 /* widget */,
 				088E59E2255E3C1300B4D0B0 /* Frameworks */,
 				081EBBC3254F4B6E009BB667 /* Products */,
 			);
@@ -116,6 +184,8 @@
 			children = (
 				081EBBC2254F4B6E009BB667 /* Fish Camp.app */,
 				088E59E1255E3C1300B4D0B0 /* Alert WidgetExtension.appex */,
+				08A5895C257881C000767560 /* fishcampforios.app */,
+				08A58986257883E800767560 /* widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +219,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		08898291257D7F62003D0CFF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				080BE8A1256763990072226D /* WidgetMachine.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		088E59E2255E3C1300B4D0B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,13 +240,43 @@
 			isa = PBXGroup;
 			children = (
 				088E59E8255E3C1300B4D0B0 /* Alert_Widget.swift */,
-				080BE8A1256763990072226D /* WidgetMachine.swift */,
-				088E59EA255E3C1300B4D0B0 /* Alert_Widget.intentdefinition */,
+				088E59EA255E3C1300B4D0B0 /* SelectParkIntent.intentdefinition */,
 				088E59EB255E3C1600B4D0B0 /* Assets.xcassets */,
 				088E59ED255E3C1600B4D0B0 /* Info.plist */,
 				088E59EE255E3C1600B4D0B0 /* Alert_Widget.entitlements */,
 			);
 			path = "Alert Widget";
+			sourceTree = "<group>";
+		};
+		08A5895D257881C000767560 /* fishcampforios */ = {
+			isa = PBXGroup;
+			children = (
+				08A5895E257881C000767560 /* fishcampforiosApp.swift */,
+				08A58960257881C000767560 /* ContentView.swift */,
+				08A58962257881C200767560 /* Assets.xcassets */,
+				08A58967257881C300767560 /* Info.plist */,
+				08A58964257881C200767560 /* Preview Content */,
+			);
+			path = fishcampforios;
+			sourceTree = "<group>";
+		};
+		08A58964257881C200767560 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08A58965257881C200767560 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08A58989257883E800767560 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				08A5898A257883E800767560 /* widget.swift */,
+				08A5898C257883E800767560 /* SelectParkIntent.intentdefinition */,
+				08A5898D257883ED00767560 /* Assets.xcassets */,
+				08A5898F257883ED00767560 /* Info.plist */,
+			);
+			path = widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +318,42 @@
 			productReference = 088E59E1255E3C1300B4D0B0 /* Alert WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		08A5895B257881C000767560 /* fishcampforios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A5896A257881C300767560 /* Build configuration list for PBXNativeTarget "fishcampforios" */;
+			buildPhases = (
+				08A58958257881C000767560 /* Sources */,
+				08A58959257881C000767560 /* Frameworks */,
+				08A5895A257881C000767560 /* Resources */,
+				08A58998257883ED00767560 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A58993257883ED00767560 /* PBXTargetDependency */,
+			);
+			name = fishcampforios;
+			productName = fishcampforios;
+			productReference = 08A5895C257881C000767560 /* fishcampforios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08A58985257883E800767560 /* widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A58995257883ED00767560 /* Build configuration list for PBXNativeTarget "widgetExtension" */;
+			buildPhases = (
+				08A58982257883E800767560 /* Sources */,
+				08A58983257883E800767560 /* Frameworks */,
+				08A58984257883E800767560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetExtension;
+			productName = widgetExtension;
+			productReference = 08A58986257883E800767560 /* widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,6 +367,12 @@
 						CreatedOnToolsVersion = 12.1;
 					};
 					088E59E0255E3C1300B4D0B0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					08A5895B257881C000767560 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					08A58985257883E800767560 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -242,6 +392,8 @@
 			targets = (
 				081EBBC1254F4B6E009BB667 /* fishcamp */,
 				088E59E0255E3C1300B4D0B0 /* Alert WidgetExtension */,
+				08A5895B257881C000767560 /* fishcampforios */,
+				08A58985257883E800767560 /* widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +417,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08A5895A257881C000767560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A58966257881C300767560 /* Preview Assets.xcassets in Resources */,
+				08A58963257881C200767560 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A58984257883E800767560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5898E257883ED00767560 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -275,6 +444,7 @@
 				081EBBE1254F5042009BB667 /* APIMachine.swift in Sources */,
 				081EBBC8254F4B6E009BB667 /* ContentView.swift in Sources */,
 				084780BA2559C6EE00A06C67 /* AlertMachine.swift in Sources */,
+				08756F0A2579A29200EDE3B2 /* SelectParkIntent.intentdefinition in Sources */,
 				081EBBC6254F4B6E009BB667 /* AppDelegate.swift in Sources */,
 				0885AC97255AF4AF00AB401D /* PreferencesVC.swift in Sources */,
 				081EBBDD254F4CAB009BB667 /* StampView.swift in Sources */,
@@ -292,7 +462,34 @@
 				088E59FA255E3C4E00B4D0B0 /* APIMachine.swift in Sources */,
 				088E59FD255E3C5100B4D0B0 /* APIMachineSecret.swift in Sources */,
 				080BE8A2256763990072226D /* WidgetMachine.swift in Sources */,
-				088E59EF255E3C1600B4D0B0 /* Alert_Widget.intentdefinition in Sources */,
+				088E59EF255E3C1600B4D0B0 /* SelectParkIntent.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A58958257881C000767560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A589762578822500767560 /* APIMachine.swift in Sources */,
+				08A58961257881C000767560 /* ContentView.swift in Sources */,
+				08A5895F257881C000767560 /* fishcampforiosApp.swift in Sources */,
+				08A589722578822000767560 /* AlertMachine.swift in Sources */,
+				08A58991257883ED00767560 /* SelectParkIntent.intentdefinition in Sources */,
+				08A5897A2578822800767560 /* APIMachineSecret.swift in Sources */,
+				08A5897E2578832C00767560 /* AlertDetailView.swift in Sources */,
+				08A5896E257881F800767560 /* AlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A58982257883E800767560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A589B02578849800767560 /* APIMachine.swift in Sources */,
+				08A58990257883ED00767560 /* SelectParkIntent.intentdefinition in Sources */,
+				08A5898B257883E800767560 /* widget.swift in Sources */,
+				08A589B5257884A100767560 /* APIMachineSecret.swift in Sources */,
+				08A589AB2578846700767560 /* WidgetMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +500,11 @@
 			isa = PBXTargetDependency;
 			target = 088E59E0255E3C1300B4D0B0 /* Alert WidgetExtension */;
 			targetProxy = 088E59F1255E3C1600B4D0B0 /* PBXContainerItemProxy */;
+		};
+		08A58993257883ED00767560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A58985257883E800767560 /* widgetExtension */;
+			targetProxy = 08A58992257883ED00767560 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,7 +644,7 @@
 				CODE_SIGN_ENTITLEMENTS = fishcamp/fishcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2051;
+				CURRENT_PROJECT_VERSION = 1341;
 				DEVELOPMENT_ASSET_PATHS = "\"fishcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -453,7 +655,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcamp;
 				PRODUCT_NAME = "Fish Camp";
 				SWIFT_VERSION = 5.0;
@@ -469,7 +671,7 @@
 				CODE_SIGN_ENTITLEMENTS = fishcamp/fishcamp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2051;
+				CURRENT_PROJECT_VERSION = 1341;
 				DEVELOPMENT_ASSET_PATHS = "\"fishcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -480,7 +682,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcamp;
 				PRODUCT_NAME = "Fish Camp";
 				SWIFT_VERSION = 5.0;
@@ -494,7 +696,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Alert Widget/Alert_Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2051;
+				CURRENT_PROJECT_VERSION = 1341;
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Alert Widget/Info.plist";
@@ -504,7 +706,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderrohrig.fishcamp.Alert-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -519,7 +721,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Alert Widget/Alert_Widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2051;
+				CURRENT_PROJECT_VERSION = 1341;
 				DEVELOPMENT_TEAM = 3865YC2YEY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Alert Widget/Info.plist";
@@ -529,11 +731,115 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderrohrig.fishcamp.Alert-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		08A58968257881C300767560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1341;
+				DEVELOPMENT_ASSET_PATHS = "\"fishcampforios/Preview Content\"";
+				DEVELOPMENT_TEAM = 3865YC2YEY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = fishcampforios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcampforios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08A58969257881C300767560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1341;
+				DEVELOPMENT_ASSET_PATHS = "\"fishcampforios/Preview Content\"";
+				DEVELOPMENT_TEAM = 3865YC2YEY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = fishcampforios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcampforios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08A58996257883ED00767560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1341;
+				DEVELOPMENT_TEAM = 3865YC2YEY;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcampforios.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08A58997257883ED00767560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1341;
+				DEVELOPMENT_TEAM = 3865YC2YEY;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderrohrig.fishcampforios.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -563,6 +869,24 @@
 			buildConfigurations = (
 				088E59F5255E3C1600B4D0B0 /* Debug */,
 				088E59F6255E3C1600B4D0B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A5896A257881C300767560 /* Build configuration list for PBXNativeTarget "fishcampforios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A58968257881C300767560 /* Debug */,
+				08A58969257881C300767560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A58995257883ED00767560 /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A58996257883ED00767560 /* Debug */,
+				08A58997257883ED00767560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -36,6 +36,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func parkCodesPressed(_ sender: Any) {
+        NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/Park-Codes#national-park-service-park-codes")!)
+    }
+    
 }
 

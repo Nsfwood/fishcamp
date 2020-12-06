@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AlertView: View {
     
+    @Environment(\.openURL) var openURL
     @State var parkCode = ""
     @ObservedObject var fetch = FetchAlert()
     @State var showDetail = false
@@ -30,7 +31,7 @@ struct AlertView: View {
                 Text("Yosemite National Park - YOSE").foregroundColor(Color.gray)
                 Spacer()
                 Text("Enter park code to see alerts.")
-                Button("Look up park codes") { NSWorkspace.shared.open(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/Park-Codes#national-park-service-park-codes")!) }
+                Button("Look up park codes") { openURL(URL(string: "https://github.com/Nsfwood/fishcamp/wiki/Park-Codes#national-park-service-park-codes")!) }
                 Spacer()
             }
             else {
@@ -40,7 +41,7 @@ struct AlertView: View {
                         Spacer()
                         //Button("Details") {}
                         if let u = URL(string: alert.url!) {
-                            Button("Open") { NSWorkspace.shared.open(u) }
+                            Button("Open") { openURL(u) }
                         }
                         Button("Details") { self.selectedAlert = alert }
                         //.popover(isPresented: $showDetail) { AlertDetailView(alertToShow: alert) }
@@ -51,29 +52,29 @@ struct AlertView: View {
             }
         }
         .padding()
-        .focusable()
-        .touchBar {
-            Button("Great Smoky Mountains") {
-                self.parkCode = "grsm"
-                self.fetch.getAlerts(forPark: "grsm")
-            }
-            Button("Grand Canyon") {
-                self.parkCode = "grca"
-                self.fetch.getAlerts(forPark: "grca")
-            }
-            Button("Rocky Mountain") {
-                self.parkCode = "romo"
-                self.fetch.getAlerts(forPark: "romo")
-            }
-            Button("Zion") {
-                self.parkCode = "zion"
-                self.fetch.getAlerts(forPark: "zion")
-            }
-            Button("Yosemite") {
-                self.parkCode = "yose"
-                self.fetch.getAlerts(forPark: "yose")
-            }
-        }
+//        .focusable()
+//        .touchBar {
+//            Button("Great Smoky Mountains") {
+//                self.parkCode = "grsm"
+//                self.fetch.getAlerts(forPark: "grsm")
+//            }
+//            Button("Grand Canyon") {
+//                self.parkCode = "grca"
+//                self.fetch.getAlerts(forPark: "grca")
+//            }
+//            Button("Rocky Mountain") {
+//                self.parkCode = "romo"
+//                self.fetch.getAlerts(forPark: "romo")
+//            }
+//            Button("Zion") {
+//                self.parkCode = "zion"
+//                self.fetch.getAlerts(forPark: "zion")
+//            }
+//            Button("Yosemite") {
+//                self.parkCode = "yose"
+//                self.fetch.getAlerts(forPark: "yose")
+//            }
+//        }
         .sheet(item: self.$selectedAlert) { alert in
             AlertDetailView(alertToShow: alert).frame(width: 400, height: 400, alignment: .topLeading)
         }

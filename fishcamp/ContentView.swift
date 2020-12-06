@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            AlertView().tabItem { Label("Alerts", systemImage: "gear") } // Text("Alerts")
+            AlertView().tabItem { Label("Alerts", systemImage: "star") } // Text("Alerts")
             StampView().tabItem { Label("Passport", systemImage: "star") } // Text("Passport")
         }.padding()
     }
